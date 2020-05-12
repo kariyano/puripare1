@@ -11,6 +11,12 @@
   user-select: none;
 }
 
+@mixin area-posi($top: 0, $left: 0) {
+  position: absolute;
+  top: $top + px;
+  left: $left + px;
+}
+
 
 #rice {
   @include items(red, 50px);
@@ -24,11 +30,30 @@
 }
 
 #plate {
-  width: 300px;
-  height: 400px;
+  width: 400px;
+  height: 600px;
   background-color: rgba(112, 34, 34, 0.315);
   position: absolute;
   top: 200px;
   left: 300px;
   z-index: -1;
+  position: relative;
+}
+
+.area {
+  width: 190px;
+  height: 290px;
+  border: black solid 1px;
+}
+
+#rice-area {
+  @include area-posi(5, 200);
+}
+
+#soup-area {
+  @include area-posi(300, 200);
+}
+
+#oshinko-area {
+  @include area-posi(150, 0);
 }

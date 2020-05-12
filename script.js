@@ -55,8 +55,8 @@ document.removeEventListener('mousemove', onMouseMove0);
 soup.onmouseup = function(event) {
   let x = event.clientX;
   let y = event.clientY;
-  let width = rice.offsetWidth;
-  let height = rice.offsetHeight;
+  let width = soup.offsetWidth;
+  let height = soup.offsetHeight;
   let plateRect = plate.getBoundingClientRect();
   if((x >= plateRect.left && x<=(plateRect.left + plateRect.width)) && (y >= plateRect.top && y <= (plateRect.top + plateRect.height))){
 
@@ -66,8 +66,8 @@ document.removeEventListener('mousemove', onMouseMove1);
 oshinko.onmouseup = function(event) {
   let x = event.clientX;
   let y = event.clientY;
-  let width = rice.offsetWidth;
-  let height = rice.offsetHeight;
+  let width = oshinko.offsetWidth;
+  let height = oshinko.offsetHeight;
   let plateRect = plate.getBoundingClientRect();
   if((x >= plateRect.left && x<=(plateRect.left + plateRect.width)) && (y >= plateRect.top && y <= (plateRect.top + plateRect.height))){
 
