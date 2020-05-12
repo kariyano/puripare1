@@ -1,3 +1,12 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  height: 100%;
+}
+
 @mixin items($color: #fff, $topPosi: 20px) {
   width: 100px;
   height: 100px;
@@ -16,7 +25,10 @@
   top: $top + px;
   left: $left + px;
 }
-
+body {
+  display: flex;
+  height: 100%;
+}
 
 #rice {
   @include items(red, 50px);
@@ -26,7 +38,26 @@
   @include items(blue, 200px);
 }
 #oshinko {
-  @include items(green, 350px )
+  @include items(rgb(162, 0, 255), 350px );
+}
+#sarada {
+  @include items(green,500px );
+}
+#egg {
+  @include items(rgb(255, 145, 0),650px);
+}
+
+#wait-area-1 {
+  width: 150px;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.212);
+}
+#wait-area-2 {
+  width: 150px;
+  height: 100%;
+  position: absolute;
+  left: 150px;
+  background-color: rgba(0, 0, 0, 0.212);
 }
 
 #plate {
@@ -35,7 +66,7 @@
   background-color: rgba(112, 34, 34, 0.315);
   position: absolute;
   top: 200px;
-  left: 300px;
+  left: 200px;
   z-index: -1;
   position: relative;
 }
