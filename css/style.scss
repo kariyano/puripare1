@@ -145,7 +145,7 @@ body {
   height: 600px;
   background-color: rgba(112, 34, 34, 0.315);
   position: absolute;
-  top: 50px;
+  top: 150px;
   left: 200px;
   z-index: -1;
   position: relative;
@@ -168,3 +168,55 @@ body {
 #oshinko-area {
   @include area-posi(150, 0);
 }
+
+#menu {
+  position: absolute;
+  left: 400px;
+  button {
+    margin-top: 30px;
+    width: 60px;
+    height: 20px;
+    background-color: rgba(100, 148, 237, 0.699);
+  }
+  
+}
+p {
+  display: none;
+}
+.active {
+  display: block;
+  margin-top: 20px;
+  padding: 4px 10px;
+  border: 1px solid black
+ }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
