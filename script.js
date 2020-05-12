@@ -3,6 +3,7 @@ const soup = document.getElementById('soup');
 const oshinko = document.getElementById('oshinko');
 const sarada = document.getElementById('sarada');
 const egg = document.getElementById('egg');
+const nattou = document.getElementById('nattou');
 
 
 
@@ -21,6 +22,9 @@ sarada.onmousedown = function(event) {
 }
 egg.onmousedown = function(event) {
   document.addEventListener('mousemove',onMouseMove4);
+}
+nattou.onmousedown = function(event) {
+  document.addEventListener('mousemove',onMouseMove5);
 }
 
 const onMouseMove0 = function(event){ 
@@ -62,6 +66,14 @@ const onMouseMove4 = function(event){
   let height = egg.offsetHeight;
   egg.style.top = (y - height / 2) + 'px';
   egg.style.left = (x - width / 2) + 'px';
+}
+const onMouseMove5 = function(event){ 
+  let x = event.clientX;
+  let y = event.clientY;
+  let width = nattou.offsetWidth;
+  let height = nattou.offsetHeight;
+  nattou.style.top = (y - height / 2) + 'px';
+  nattou.style.left = (x - width / 2) + 'px';
 }
 
 rice.onmouseup = function(event) {
@@ -119,4 +131,15 @@ egg.onmouseup = function(event) {
 
 }
 document.removeEventListener('mousemove', onMouseMove4);
+}
+nattou.onmouseup = function(event) {
+  let x = event.clientX;
+  let y = event.clientY;
+  let width = nattou.offsetWidth;
+  let height = nattou.offsetHeight;
+  let plateRect = plate.getBoundingClientRect();
+  if((x >= plateRect.left && x<=(plateRect.left + plateRect.width)) && (y >= plateRect.top && y <= (plateRect.top + plateRect.height))){
+
+}
+document.removeEventListener('mousemove', onMouseMove5);
 }
