@@ -6,6 +6,10 @@
 html {
   height: 100%;
 }
+body {
+  display: flex;
+  height: 100%;
+}
 
 @mixin items($color: #fff, $topPosi: 20px) {
   width: 100px;
@@ -19,6 +23,8 @@ html {
   border-radius: 50%;
   user-select: none;
   background-color: rgb(243, 243, 243);
+  z-index: 2;
+  margin-left: 6px;
 }
 
 @mixin area-posi($top: 0, $left: 0) {
@@ -26,30 +32,100 @@ html {
   top: $top + px;
   left: $left + px;
 }
-body {
-  display: flex;
-  height: 100%;
-}
 
 #rice {
-  @include items(red, 50px);
+  @include items(red, 10px);
 }
 
 #soup {
-  @include items(blue, 200px);
+  @include items(blue, 130px);
 }
 #oshinko {
-  @include items(rgb(162, 0, 255), 350px );
+  @include items(rgb(162, 0, 255), 250px );
 }
 #sarada {
-  @include items(green,500px );
+  @include items(green,370px );
 }
 #egg {
-  @include items(rgb(255, 145, 0),650px);
+  @include items(rgb(255, 145, 0),490px);
 }
 #nattou {
-  @include items(rgb(155, 100, 37),800px);
+  @include items(rgb(155, 100, 37),610px);
 }
+#salmon {
+  @include items(pink,610px);
+}
+.sm-item {
+  width: 76px;
+  height: 76px;
+  text-align: center;
+  line-height: 76px;
+  border-radius: 50%;
+  user-select: none;
+  background-color: rgb(243, 243, 243);
+  margin-top: 20px;
+  z-index: 5;
+  border: 1px solid black;
+  cursor: pointer;
+  position: absolute;
+  user-select: none;
+}
+@mixin items1($color:black,$top: 0) {
+  border: 1px solid $color;
+  position: absolute;
+  top: $top + px;
+  
+}
+#nori {
+  top: 10px;
+}
+#katubushi {
+  top:110px;
+}
+#mayopote {
+  top:210px;
+}
+#shouyu {
+  top: 310px;
+}
+#sanshou {
+  top: 410px;
+}
+#nori-plate {
+  width: 140px;
+  height: 80px;
+  text-align: center;
+  line-height: 80px;
+  background-color: rgba(0, 204, 255, 0.842);
+  cursor: pointer;
+  position: absolute;
+  top: 510px;
+  user-select: none;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 #wait-area-1 {
   width: 150px;
@@ -62,7 +138,6 @@ body {
   position: absolute;
   left: 150px;
   background-color: rgba(0, 0, 0, 0.1);
-  z-index: -2;
 }
 
 #plate {
@@ -70,7 +145,7 @@ body {
   height: 600px;
   background-color: rgba(112, 34, 34, 0.315);
   position: absolute;
-  top: 200px;
+  top: 50px;
   left: 200px;
   z-index: -1;
   position: relative;

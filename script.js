@@ -4,6 +4,13 @@ const oshinko = document.getElementById('oshinko');
 const sarada = document.getElementById('sarada');
 const egg = document.getElementById('egg');
 const nattou = document.getElementById('nattou');
+const nori = document.getElementById('nori');
+const katubushi = document.getElementById('katubushi');
+const mayopote = document.getElementById('mayopote');
+const shouyu = document.getElementById('shouyu');
+const sanshou = document.getElementById('sanshou');
+const noriPlate = document.getElementById('nori-plate');
+const salmon = document.getElementById('salmon');
 
 
 
@@ -25,6 +32,27 @@ egg.onmousedown = function(event) {
 }
 nattou.onmousedown = function(event) {
   document.addEventListener('mousemove',onMouseMove5);
+}
+nori.onmousedown = function(event) {
+  document.addEventListener('mousemove',onMouseMove6);
+}
+katubushi.onmousedown = function(event) {
+  document.addEventListener('mousemove',onMouseMove7);
+}
+mayopote.onmousedown = function(event) {
+  document.addEventListener('mousemove',onMouseMove8);
+}
+shouyu.onmousedown = function(event) {
+  document.addEventListener('mousemove',onMouseMove9);
+}
+sanshou.onmousedown = function(event) {
+  document.addEventListener('mousemove',onMouseMove10);
+}
+noriPlate.onmousedown = function(event) {
+  document.addEventListener('mousemove',onMouseMove11);
+}
+salmon.onmousedown = function(event) {
+  document.addEventListener('mousemove',onMouseMove12);
 }
 
 const onMouseMove0 = function(event){ 
@@ -74,6 +102,62 @@ const onMouseMove5 = function(event){
   let height = nattou.offsetHeight;
   nattou.style.top = (y - height / 2) + 'px';
   nattou.style.left = (x - width / 2) + 'px';
+}
+const onMouseMove6 = function(event){ 
+  let x = event.clientX;
+  let y = event.clientY;
+  let width = nori.offsetWidth;
+  let height = nori.offsetHeight;
+  nori.style.top = (y - height / 1.5) + 'px';
+  nori.style.left = (x - width * 2.5)+ 'px';
+}
+const onMouseMove7 = function(event){ 
+  let x = event.clientX;
+  let y = event.clientY;
+  let width = katubushi.offsetWidth;
+  let height = katubushi.offsetHeight;
+  katubushi.style.top = (y - height / 1.5) + 'px';
+  katubushi.style.left = (x - width * 2.5) + 'px';
+}
+const onMouseMove8 = function(event){ 
+  let x = event.clientX;
+  let y = event.clientY;
+  let width = mayopote.offsetWidth;
+  let height = mayopote.offsetHeight;
+  mayopote.style.top = (y - height / 2) + 'px';
+  mayopote.style.left = (x - width * 2.5) + 'px';
+}
+const onMouseMove9 = function(event){ 
+  let x = event.clientX;
+  let y = event.clientY;
+  let width = shouyu.offsetWidth;
+  let height = shouyu.offsetHeight;
+  shouyu.style.top = (y - height / 1.5) + 'px';
+  shouyu.style.left = (x - width * 2.5) + 'px';
+}
+const onMouseMove10 = function(event){ 
+  let x = event.clientX;
+  let y = event.clientY;
+  let width = sanshou.offsetWidth;
+  let height = sanshou.offsetHeight;
+  sanshou.style.top = (y - height / 1.5) + 'px';
+  sanshou.style.left = (x - width * 2.5) + 'px';
+}
+const onMouseMove11 = function(event){ 
+  let x = event.clientX;
+  let y = event.clientY;
+  let width = noriPlate.offsetWidth;
+  let height = noriPlate.offsetHeight;
+  noriPlate.style.top = (y - height / 2) + 'px';
+  noriPlate.style.left = (x - width * 1.5) + 'px';
+}
+const onMouseMove12 = function(event){ 
+  let x = event.clientX;
+  let y = event.clientY;
+  let width = salmon.offsetWidth;
+  let height = salmon.offsetHeight;
+  salmon.style.top = (y - height / 2) + 'px';
+  salmon.style.left = (x - width * 2) + 'px';
 }
 
 rice.onmouseup = function(event) {
@@ -132,6 +216,7 @@ egg.onmouseup = function(event) {
 }
 document.removeEventListener('mousemove', onMouseMove4);
 }
+
 nattou.onmouseup = function(event) {
   let x = event.clientX;
   let y = event.clientY;
@@ -142,4 +227,86 @@ nattou.onmouseup = function(event) {
 
 }
 document.removeEventListener('mousemove', onMouseMove5);
+}
+
+nori.onmouseup = function(event) {
+  let x = event.clientX;
+  let y = event.clientY;
+  let width = nori.offsetWidth;
+  let height = nori.offsetHeight;
+  let plateRect = plate.getBoundingClientRect();
+  if((x >= plateRect.left && x<=(plateRect.left + plateRect.width)) && (y >= plateRect.top && y <= (plateRect.top + plateRect.height))){
+
+}
+document.removeEventListener('mousemove', onMouseMove6);
+}
+
+katubushi.onmouseup = function(event) {
+  let x = event.clientX;
+  let y = event.clientY;
+  let width = katubushi.offsetWidth;
+  let height = katubushi.offsetHeight;
+  let plateRect = plate.getBoundingClientRect();
+  if((x >= plateRect.left && x<=(plateRect.left + plateRect.width)) && (y >= plateRect.top && y <= (plateRect.top + plateRect.height))){
+
+}
+document.removeEventListener('mousemove', onMouseMove7);
+}
+
+mayopote.onmouseup = function(event) {
+  let x = event.clientX;
+  let y = event.clientY;
+  let width = mayopote.offsetWidth;
+  let height = mayopote.offsetHeight;
+  let plateRect = plate.getBoundingClientRect();
+  if((x >= plateRect.left && x<=(plateRect.left + plateRect.width)) && (y >= plateRect.top && y <= (plateRect.top + plateRect.height))){
+
+}
+document.removeEventListener('mousemove', onMouseMove8);
+}
+
+shouyu.onmouseup = function(event) {
+  let x = event.clientX;
+  let y = event.clientY;
+  let width = shouyu.offsetWidth;
+  let height = shouyu.offsetHeight;
+  let plateRect = plate.getBoundingClientRect();
+  if((x >= plateRect.left && x<=(plateRect.left + plateRect.width)) && (y >= plateRect.top && y <= (plateRect.top + plateRect.height))){
+
+}
+document.removeEventListener('mousemove', onMouseMove9);
+}
+
+sanshou.onmouseup = function(event) {
+  let x = event.clientX;
+  let y = event.clientY;
+  let width = sanshou.offsetWidth;
+  let height = sanshou.offsetHeight;
+  let plateRect = plate.getBoundingClientRect();
+  if((x >= plateRect.left && x<=(plateRect.left + plateRect.width)) && (y >= plateRect.top && y <= (plateRect.top + plateRect.height))){
+
+}
+document.removeEventListener('mousemove', onMouseMove10);
+}
+noriPlate.onmouseup = function(event) {
+  let x = event.clientX;
+  let y = event.clientY;
+  let width = noriPlate.offsetWidth;
+  let height = noriPlate.offsetHeight;
+  let plateRect = plate.getBoundingClientRect();
+  if((x >= plateRect.left && x<=(plateRect.left + plateRect.width)) && (y >= plateRect.top && y <= (plateRect.top + plateRect.height))){
+
+}
+document.removeEventListener('mousemove', onMouseMove11);
+}
+salmon.onmouseup = function(event) {
+  let x = event.clientX;
+  let y = event.clientY;
+  let width = salmon.offsetWidth;
+  let height = salmon.offsetHeight;
+  let plateRect = plate.getBoundingClientRect();
+  if((x >= plateRect.left && x<=(plateRect.left + plateRect.width)) && (y >= plateRect.top && y <= (plateRect.top + plateRect.height))){
+
+}
+document.removeEventListener('mousemove', onMouseMove12);
 }
