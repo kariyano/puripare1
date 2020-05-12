@@ -4,4 +4,10 @@ $(document).ready(function () {
     let i = Math.floor(Math.random() * 27);
     $(`#${i}`).addClass('active');
   })
+
+  $('#reset').click(function() {
+    location.reload();
+  })
 }) ;
+
+
