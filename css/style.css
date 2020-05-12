@@ -8,6 +8,7 @@
   position: absolute;
   top: 20px;
   border-radius: 50%;
+  user-select: none;
 }
 #soup {
   width: 100px;
@@ -19,6 +20,7 @@
   position: absolute;
   top: 200px;
   border-radius: 50%;
+  user-select: none;
 }
 #oshinko {
   width: 100px;
@@ -30,6 +32,7 @@
   position: absolute;
   top: 400px;
   border-radius: 50%;
+  user-select: none;
 }
 
 #plate {
