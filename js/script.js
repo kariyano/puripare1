@@ -311,5 +311,12 @@ salmon.onmouseup = function(event) {
 document.removeEventListener('mousemove', onMouseMove12);
 }
 
+// let n = Math.floor(Math.random() * 27 )
+ 
+// let p = document.getElementsByTagName(p) 
+
+// function addAcitive() {
+//   p.add
+// }
 
 
